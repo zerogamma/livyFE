@@ -1,0 +1,2 @@
+export const GET_USERS_BY_LOCATION = 'GET_USERS_BY_LOCATION';
+export const GET_DATA = 'GET_DATA';

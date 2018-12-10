@@ -1,0 +1,49 @@
+{
+  "extends": "airbnb",
+  "env": {
+  "browser": true,
+  "node": true
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": [0, { "forbid": ["any"], "checkContextTypes": false, "checkChildContextTypes": false }],
+    "new-cap": [2, { "capIsNewExceptions": ["List", "Map", "Set"] }],
+    "react/no-multi-comp": 0,
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 2,
+    "comma-dangle": 0,
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-console": 0,
+    "no-alert": 0,
+    "linebreak-style": 0
+  },
+  "plugins": [
+      "react", "import"
+    ],
+    "parser":"babel-eslint",
+    "extends":["eslint:recommended", "plugin:react/recommended"],
+    "settings": {
+      "import/parser": "babel-eslint",
+      "import/resolve": {
+        "moduleDirectory": ["node_modules", "src"]
+      },"react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "15.0",
+      "flowVersion": "0.53"
+      }
+    },
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": true
+  },
+  "globals": {
+    "document": false
+  }
+}
